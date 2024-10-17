@@ -1,0 +1,294 @@
+@import url(‘https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap’);
+	*{
+		Margin: 0;
+		Padding: 0;
+		Box-sizing: border-box;
+		Font-family: ‘Montserrat Alternates’, sans-serif;
+	}
+	Body{
+		background-color: #ffffff;
+        Background-size: 100vw 100vh;
+		Background-repeat: no-repeat;
+	}
+	.cart-notification {
+		position: fixed;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #000;
+		color: #fff;
+		padding: 10px 20px;
+		border-radius: 5px;
+		display: none; /* Oculto por defecto */
+		z-index: 1000;
+		font-size: 16px;
+		opacity: 0;
+		transition: opacity 0.5s ease;
+	}
+	
+	.cart-notification.show {
+		display: block;
+		opacity: 1;
+	}
+	
+	.capa{
+		Position: fixed;
+		Width: 100%;
+		Height: 100vh;
+		Background: rgb(255, 255, 255);
+		z-index: -1;
+		top: 0;
+		left: 0;
+		padding: 15px;
+		box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+	}
+	/*Estilos para el encabezado*/
+	.header{
+		Width: 100%;
+		Height: 100px;
+		Position: fixed;
+		Top: 0;left: 0;
+	}
+	.hola {
+		background-color: #fff;
+	 	height:100px; 
+	
+	}
+	.container{
+		Width: 90%;
+		Max-width: 1200px;
+		Margin: auto;
+	}
+	.container .btn-menu, .logo{
+		Float: left;
+		Line-height:100px;
+	}
+	.container .btn-menu label{
+		Color: #000000;
+		Font-size: 25px;
+		Cursor: pointer;
+	}
+	.logo h1{
+		Color: #000000;
+		Font-weight: 400;
+		Font-size: 22px;
+		Margin-left: 10px;
+		background-color: #fff;
+	}
+	.container .menu{
+		Float: right;
+		Line-height: 100px;
+		background-color: #fff;
+
+
+	}
+	.container .menu a{
+		Display: inline-block;
+		Padding: 15px;
+		Line-height: normal;
+		Text-decoration: none;
+		Color: #000000;
+		Transition: all 0.3s ease;
+		Border-bottom: 2px solid black;
+		Font-size: 15px;
+		background-color: #fff;
+		Margin-right: 5px;
+        
+	}
+	.container .menu a:hover{
+		Border-bottom: 2px solid #c7c7c7;
+		Padding-bottom: 5px;
+		background-color: #fff;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		background-color: #fff;
+		Display: none;
+	}
+
+   
+         /* Ajustar el ancho máximo del contenedor */
+   
+    .slogan-container {
+        text-align: auto; /* Centrar el texto del eslogan */
+        display: auto;
+        justify-content: center; /* Centrado horizontal */
+        align-items: center;  
+        width: auto;
+        color:#000000;
+        height: auto;
+        max-width:80%;
+        margin: auto ; /* Añadir margen arriba y abajo y centrar horizontalmente */
+        padding: auto; /* Añadir padding para que el texto no esté pegado a los bordes */
+        border: 2px solid #000000; /* Bordes morados oscuros */
+        background-color:#ffffff;
+        max-width: 60%;
+    }
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 20px 0;
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		justify-items: center;
+		font-family: 'Times New Roman', Times, serif;
+    }
+	.p {
+		font-family: 'Times New Roman', Times, serif;
+
+	}
+	.h1 {
+		font-family: 'Times New Roman', Times, serif;
+	}
+    .abc-container {
+        
+        background-color: rgb(0, 0, 0);
+        color:white;
+        text-align: center; /* Centrar el texto del eslogan */
+        display: auto;
+        justify-content: center; /* Centrado horizontal */
+        align-items: center;  
+        width: auto;
+        height: auto;
+        margin: auto ; /* Añadir margen arriba y abajo y centrar horizontalmente */
+        padding: auto; /* Añadir padding para que el texto no esté pegado a los bordes */
+        border: 2px solid rgb(0, 0, 0); /* Bordes morados oscuros */
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .product {
+        border: 4px solid  rgb(0, 0, 0);
+        padding: 20px;
+        margin: 10px;
+        max-width: 300px;
+        background-color: rgb(255, 255, 255);
+        color: black;
+		width: 300px;
+		text-align: center;
+		
+    }
+    
+    .product-2 {
+        border: 4px solid  rgb(0, 0, 0);
+        padding: 20px;
+        margin: 10px;
+        max-width: 300px;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        width: 10000px;
+    }
+    
+    .product img {
+        max-width: 100%;
+    }
+    .carrtiodecompras-container {
+        border: 3px solid rgb(0, 0, 0);
+        padding: 20px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        margin: 20px 0;
+    }
+    
+    .boton-container {
+        border: white;
+        color: black;
+        background-color:black;
+    
+    }
+    .cart {
+        border: 1px solid rgb(0, 0, 0);
+        padding: 20px;
+        background-color:rgb(0, 0, 0);
+        color:white;
+        margin: 20px 0;
+    }
+    .add-to-cart  { 
+        border: 1px solid rgb(255, 255, 255);
+        padding: 20px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        margin: 20px 0;
+		Cursor: pointer;
+    
+    }
+	.add-to-cart a:hover{
+		background-color: #575656;
+    
+    }
+    .cart-items {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .cart-items li {
+        margin: 10px 0;
+    }
+    .cart-item-image {
+        width: 500px;
+        height: 1000px;
+        margin-right: 500px;
+    }
+	
+    
+    .Mision-container {
+        text-align: center; /* Centrar el texto del eslogan */
+        margin: 20px auto; /* Añadir margen arriba y abajo y centrar horizontalmente */
+        padding: 20px; /* Añadir padding para que el texto no esté pegado a los bordes */
+        border: 2px solid #000000; /* Bordes morados oscuros */
+        background-color: #ffffff; /* Fondo negro */
+        max-width: 60%; 
+		color: #000000;/* Ajustar el ancho máximo del contenedor */
+    }
+	.container-menu{
+		Position: absolute;
+		Background: rgba(0,0,0,0.5);
+		Width: 100%;
+		Height: 100vh;
+		Top: 0;left: 0;
+		Transition: all 500ms ease;
+		Opacity: 0;
+		Visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		Opacity: 1;
+		Visibility: visible;
+	}
+	.cont-menu{
+		Width: 100%;
+		Max-width: 250px;
+		Background: #1c1c1c;
+		Height: 100vh;
+		Position: fixed;
+		Transition: all 500ms ease;
+		Transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		Transform: translateX(0%);
+	}
+	.cont-menu nav{
+		Transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		Display: block;
+		Text-decoration: none;
+		Padding: 20px;
+		Color: #c7c7c7;
+		Border-left: 5px black;
+		Transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		Border-left: 5px solid #c7c7c7;
+		Background: #1f1f1f;
+	}
+	.cont-menu label{
+		Position: absolute;
+		Right: 5px;
+		Top: 10px;
+		Color: #fff;
+		Cursor: pointer;
+		Font-size: 18px;
+	}
+	/*Fin de Menù lateral*/
