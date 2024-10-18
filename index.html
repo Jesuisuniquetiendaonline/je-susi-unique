@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Je Suis Unisque</title>
     <link rel="stylesheet" href="nuevajesus.css">
+    <link rel="stylesheet" href="formulario.Css">
     <link rel="icon" href="je-suis-unique.ico" type="image/x-icon">
 </head>
 <body>
@@ -54,7 +55,7 @@
         <br><br>
         <br><br>
         <br>
-        <center><h1>Hola bienvenidos!!!</h1></center>
+        <center><h1 style="color: black;">Hola bienvenidos!!!</h1></center>
         <center><img src="48 sin título_20240925214644.png" width="500px" height="500px"></center>
         <center><h1 id="Grandes descuentos">Grandes descuentos</h1></center>
         <br> <br> <br>
@@ -69,14 +70,14 @@
         <br>
         <br>
         <br>
-    <center> <h1>bienvenidos a la </h1></center>
+    <center> <h1 style="color: black;">bienvenidos a la </h1></center>
     <center><img src="49 sin título_20240925232831.png" width="500px" height="500px"></center>
-    <center><h1>Tienda</h1></center>
+    <center><h1 style="color: black;">Tienda</h1></center>
 <br>
 <br>
 <br>
     <center>
-        <center><h1 id="Relojes">Relojes</h1></center>
+        <center><h1 id="Relojes" style="color: black;">Relojes</h1></center>
         <div class="product-container">
         <div class="product">
             
@@ -139,7 +140,8 @@
      
    
        
-<center><h1 id="Anillos">Anillos</h1></center>
+<center><h1 id="Anillos" style="color: black;">Anillos</h1></center>
+
 <div class="product-container">
             <div class="product">
                     <img src="anillo dos perlas.jpg" alt="Producto" class="product-image">
@@ -370,7 +372,7 @@
     </div>
 </div>
 
-<center><h1 id="Manillas"></h1></center>
+<center><h1 id="Manillas" style="color: black;">Manillas</h1></center>
 <div class="product">
     <img src="a636f94d-72c4-482c-b80a-fb001f61a2b8 (1).jfif" alt="Producto" class="product-image">
     <div class="product-details">
@@ -408,13 +410,81 @@
         <ul class="cart-items">
             <!-- Items del carrito irán aquí -->
         </ul>
+        <h1>lista de productos arriba</h1>
+
         <p style="color: green;">Total: $<span class="cart-total">0</span></p>
+        
         <div class="checkout-container">
+
+
+            
             <h2>Formulario de reservacion</h2>
-            <form id="payment-form" action="formulario.html" method="POST">
+        
                 
                 
-                <button type="submit">Ir a Pagar</button>
+                <center><div class="cart-container">
+                    <h2 style="color:white ;">Carrito de Encargo</h2>
+                    <div class="cart-items">
+                      <!-- Aquí se mostrarán los productos seleccionados -->
+                       <left>Deseas pedir tu Encargo por otro meido aqui tienes
+                       <br>
+                       Email: je.suis.unisque@gmail.com
+                       <br>
+                       WhatsApp: 316 3181814
+                       <br> 
+                       Solo debes escribir el numero de tu producto por ejemplo
+                       #16,#25, etc.
+                       <br>  
+                       Este sera guardado y podras reclamarlo en el puesto de Je Suis Unique
+                       <br>
+                       Por el siguente formulario podras guardar tu  producto favorito antes de que se agote recibirás un correo electronico el cual verificara el guardado de tu producto y en que momento puedes pasar por el junto precio total a el correo electronico escrito en el formulario.
+                    </div>
+                  </left>
+                    <p class="cart-total"></p>
+                  </div>
+                
+                  <form id="form">
+                   <div class="field-container">
+                
+                   <div class="field">
+                      <label for="from_name">Nombre completo</label>
+                      <input type="text" name="from_name" id="from_name">
+                    </div>
+                    <div class="field">
+                      <label for="message">Message</label>
+                      <input type="text" name="message" id="message">
+                    </div>
+                    <div class="field">
+                      <label for="email_id">Email ID</label>
+                      <input type="text" name="email_id" id="email_id">
+                    </div>
+                    <div class="field">
+                      <label for="reply_to">Numero del producto Ejemplo :1#,8# </label>
+                      <input type="text" name="reply_to" id="reply_to">
+                    </div>
+                    <div class="field">
+                      <label for="direcion_pepe">Direcion:</label>
+                      <input type="text" name="direcion_pepe" id="direcion_pepe">
+                    </div>
+                    <div class="field">
+                      <label for="numero_telefonico">Numero telefonico:</label>
+                      <input type="text" name="numero_telefonico" id="numero_telefonico">
+                    </div>
+                    <div class="field">
+                      <label for="reply_to">comentarios y sujerencias </label>
+                      <input type="text" name="cometarios_sujerencias" id="cometarios_sujerencias">
+                    
+                
+                    <input type="submit" id="button" value="Enviar">
+                  </form>
+                </div></center>
+                
+                
+                
+                    
+                
+                </center>
+                </center>
             
             </form>
     </div>
@@ -453,10 +523,8 @@
         <p>Conseguir que nuestros clientes se sientan satisfechos con nuestros productos y puedan expresar sus diversos gustos por medio de nuestros accesorios. Estar en una gran cantidad de puntos en el país para un mayor rango de ventas en el territorio nacional, tener una página web que provea una gama de opciones de ventas, personalización y una interfaz didáctica</p>
         
    </div>
-    
 
-</center>
-</center>
+   
 
 <script src="pepe.js"></script> <!-- Asegúrate de que el archivo JavaScript esté correctamente enlazado -->
 <script>
@@ -482,6 +550,91 @@
 
             localStorage.setItem('cartItems', JSON.stringify(cartItems));
         }
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+      const cartContainer = document.querySelector('.cart-items');
+      const cartTotal = document.querySelector('.cart-total');
+      let total = 0;
+
+      if (cartItems.length === 0) {
+        cartContainer.innerHTML = '<p>No hay productos en el carrito.</p>';
+      } else {
+        cartItems.forEach(item => {
+          total += item.price * item.quantity;
+          const cartItem = document.createElement('div');
+          cartItem.classList.add('cart-item');
+          cartItem.innerHTML = `
+            <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+            <div class="cart-item-details">
+              <p>${item.name}</p>
+              <p>Cantidad: ${item.quantity}</p>
+              <p>Precio: $${item.price}</p>
+            </div>
+          `;
+          cartContainer.appendChild(cartItem);
+        });
+        cartTotal.textContent = `Total: $${total}`;
+      }
+
+      const form = document.getElementById('form');
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        sendEmail(cartItems, total);
+      });
+
+      function sendEmail(cartItems, total) {
+        const fromName = document.getElementById('from_name').value;
+        const message = document.getElementById('message').value;
+        const emailId = document.getElementById('email_id').value;
+        const replyTo = document.getElementById('reply_to').value;
+
+        const cartDetails = cartItems.map(item => {
+          return `<p>${item.name} - Cantidad: ${item.quantity} - Precio: $${item.price}</p><img src="${item.image}" alt="${item.name}" style="width: 50px; height: 50px;">`;
+        }).join('');
+
+        const templateParams = {
+          from_name: fromName,
+          message: message,
+          email_id: emailId,
+          reply_to: replyTo,
+          cart_details: cartDetails,
+          total: total
+        };
+
+        emailjs.send('default_service', 'template_afwk28j', templateParams)
+          .then(() => {
+            alert('Email enviado!');
+          }, (err) => {
+            alert(JSON.stringify(err));
+          });
+      }
+    });
+  </script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init('RvZAesVUZvqW5NNkc');
+
+    const btn = document.getElementById('button');
+
+    document.getElementById('form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      btn.value = 'Sending...';
+
+      const serviceID = 'default_service';
+      const templateID = 'template_afwk28j';
+
+      emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+          btn.value = 'Send Email';
+          alert('Sent!');
+        }, (err) => {
+          btn.value = 'Send Email';
+          alert(JSON.stringify(err));
+        });
     });
 </script>
 </center>
