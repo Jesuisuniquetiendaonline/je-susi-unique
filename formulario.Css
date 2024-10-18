@@ -1,0 +1,173 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Color blanco para el texto, cambia si lo prefieres */
+    margin: 0;
+    padding: 0;
+}
+.dropbtn {
+    background-color: #67236d; /* Color del botón del menú */
+    color: white; /* Color del texto del botón */
+    padding: 10px 15px; /* Espaciado interno del botón */
+    font-size: 1em; /* Tamaño del texto en el botón */
+    border: none; /* Quitar borde del botón */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    margin: 0 10px; /* Espacio entre los botones del menú */
+    border-radius: 5px; /* Bordes redondeados en los botones */
+}
+
+.dropbtn:hover {
+    background-color: #a200ff; /* Color de fondo al pasar el mouse sobre el botón */
+}
+
+/* Contenedor de los menús desplegables */
+.dropdowns {
+    display: flex; /* Mostrar los menús en línea */
+}
+
+/* Contenido del menú desplegable */
+.dropdown {
+    position: relative; /* Posicionamiento relativo para el contenido del menú */
+}
+
+.dropdown-content {
+    display: none; /* Ocultar el contenido del menú por defecto */
+    position: absolute; /* Posicionamiento absoluto con respecto al contenedor */
+    background-color: #f9f9f9; /* Color de fondo del contenido del menú */
+    min-width: 160px; /* Ancho mínimo del contenido del menú */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra del contenido del menú */
+    z-index: 1; /* Asegurar que el contenido del menú esté por encima de otros elementos */
+}
+
+/* Estilo para los enlaces dentro del menú desplegable */
+.dropdown-content a {
+    color: black; /* Color del texto del enlace */
+    padding: 12px 16px; /* Espaciado interno de los enlaces */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    display: block; /* Mostrar enlaces como bloques */
+}
+
+/* Cambiar el color del enlace al pasar el mouse */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Mostrar el contenido del menú cuando se pasa el ratón sobre el botón */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Cambiar el color del botón del menú al pasar el ratón sobre él */
+.dropdown:hover .dropbtn {
+    background-color: #6d0083;
+}
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el header */
+}
+.logo {
+    width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: auto;
+    margin-right: 20px;
+}
+.video-background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+  }
+
+.form-container {
+    background-color: #90ddf0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #333; /* Borde del cuadro */
+    margin-bottom: 20px;
+}
+.field-container {
+    background-color: #4d003c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #333; /* Borde del cuadro */
+ }
+.cart-container {
+    background-color: #35003a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #333; /* Borde del cuadro */
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cart-item-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.cart-item-details {
+    text-align: left;
+}
+
+.cart-total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
