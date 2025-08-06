@@ -1,17 +1,16 @@
-/* Estilos para el fondo completo de la página */
+
 body {
     font-family: 'Times New Roman', serif;
     background-image: url('file:///C:/Users/ar771/Pictures/images.jpg');
     background-size: cover;
     background-position: center;
-    color: #fff; /* Color blanco para el texto, cambia si lo prefieres */
+    color: #fff; 
     margin: 0;
     padding: 0;
     zoom: 75%;
 }
-/* Estilos para pantallas pequeñas */
 @media (max-width: 400px) and (max-height: 554px) {
-    /* Tus estilos específicos aquí */
+    
   }
   
 @media (max-width: 600px) {
@@ -21,7 +20,7 @@ body {
     }
   }
   
-  /* Estilos para pantallas medianas */
+  
   @media (min-width: 601px) and (max-width: 1200px) {
     .container {
       width: 80%;
@@ -329,3 +328,4 @@ p {
     height: 500px;
     margin-right: 500px;
 }
+
